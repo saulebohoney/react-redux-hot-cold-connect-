@@ -1,6 +1,7 @@
 import './reset.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as logs from './temp.js';
 
 import './reset.css';
 import './index.css';
