@@ -54,7 +54,6 @@ export const HotColdreducer = (state=initialState, action) => {
           showInfoModal: true
         })
       }
-      console.log("This is showInfoModal: " + state.showInfoModal);
       
   }
   return state;
