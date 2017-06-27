@@ -31,8 +31,8 @@ export  class Game extends React.Component {
                 <Header onNewGame={() => this.newGame()}/>
                 <GuessSection feedback={this.props.feedback}
                     onGuess={(guess) => this.makeGuess(guess)} />
-                <GuessCount count={this.props.guesses.length} />
-                <GuessList guesses={this.props.guesses} />
+                <GuessCount />
+                <GuessList />
             </div>
         );
     }
@@ -45,7 +45,6 @@ Game.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-    guesses: state.guesses,
     feedback: state.feedback,
     correctAnswer:state.correctAnswer,
     showInfoModal:state.showInfoModal
